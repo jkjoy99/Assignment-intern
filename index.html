@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Resource Kit</title>
+    <link rel="shortcut icon" href="butterfely.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontWesome CDN  -->
+    <script src="https://kit.fontawesome.com/13f36ff57d.js" crossorigin="anonymous"></script>
+
+    <!-- Apex Chart CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <ul>
+                <li class="link-container logo">
+                    <a class="" href="">
+                        <img id="logo" src="butterfely.png" alt="">
+                    </a>
+
+                    <a id="search" href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+
+                <li class="link-container">
+                    <a class="link" href="/home">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+
+                    <a class="link" href="">
+                        <i class="fa-regular fa-newspaper"></i>
+                    </a>
+
+                    <a class="link" href="">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                    </a>
+
+                    <a class="link" href="">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="notification" class="link-container">
+                <a class="link notification-parent" href="">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification"></span>
+                </a>
+
+                <a class="link" href="">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </ul>
+
+            <ul id="mobile">
+                <a class="link notification-parent" href="">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification"></span>
+                </a>
+
+                <a id="search" href="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="parent-container">
+
+        <!-- Details Section -->
+        <section class="detail-container">
+            <div class="intro">
+                <img class="avater" src="/avater.jpg" alt="">
+
+                <h3 class="header-text">
+                    Hi Dolly, <br>
+                    <p class="text">wellcome back.</p>
+                </h3>
+            </div>
+
+            <div class="transection">
+                <p class="transection-header">Today</p>
+                <p id="total-transection">$19,892 <br> <span id="transection-text">Account Balance</span></p>
+                <p class="blance">$4,000 <br> <span class="instent">Year-to-Date Contributions</span></p>
+                <p class="blance">$1,892 <br> <span class="instent">Total Interest</span></p>
+
+                <button id="button">I wont to <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+
+            <div class="transaction">
+                <h3>Recent Transaction</h3>
+
+                <div>
+                    <p class="text">2020-08-07 </p>
+                    <h4>Withdrawal transfer to Bank-xxx11 </h4>
+                </div>
+
+                <div>
+                    <p class="text">2020-07-21 </p>
+                    <h4>Withdrawal transfer to Bank-xxx11</h4>
+                </div>
+
+                <div>
+                    <p class="text">2020-07-16 </p>
+                    <h4>Withdrawal transfer to Bank-xxx11</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Retirement Income Section -->
+        <section>
+            <div class="income-container">
+                <div>
+                    <p class="retirement">Retirement Income</p>
+                    <p class="retirement-date">Starting Year 2056</p>
+                </div>
+
+                <div class="chart-intro">
+                    <div class="chart-container">
+                        <p class="amount">$300,000</p>
+                        <p class="text">My Goal</p>
+                    </div>
+
+                    <div class="chart-container">
+                        <p class="amount">59%</p>
+                        <p class="text">Goal Achieved</p>
+
+                    </div>
+
+                    <div class="chart-container">
+                        <p class="amount">$300</p>
+                        <p class="text">Est. Montly Income</p>
+                    </div>
+                </div>
+
+                <div class="chrt-container">
+                    <p class="chart-title">Contributions Overtime</p>
+
+                    <div class="chart-details">
+                        <div class="contribution-hader">
+                            <span class="contribution"></span>
+                            <p class="chart-text">Employer: </p>
+                            <p>K 73,500</p>
+                        </div>
+
+                        <div class="contribution-hader">
+                            <span class="contribution-tow"></span>
+                            <p class="chart-text">Employee:</p>
+                            <p>K 52,500</p>
+                        </div>
+
+                        <div class="contribution-hader">
+                            <span class="contribution-three"></span>
+                            <p class="chart-text">Total Interest:</p>
+                            <p>K 244,313</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+
+
+                <div class="compare-container">
+                    <div>
+                        <p class="chart-title">How do I compare to my peers?</p>
+                        <p class="chart-text">These numbers represent current goal achievement</p>
+                    </div>
+
+                    <div class="compare-parent">
+                        <div>
+                            <button class="compare-info">
+                                <p>Age: </p>
+                                <p>Under 30</p>
+                                <i class="fa-solid chart-textt fa-caret-down"></i>
+                            </button>
+
+                            <button class="compare-info">
+                                <p>Salary: </p>
+                                <p>K 20-K30-</p>
+                                <i class="fa-solid chart-textt fa-caret-down"></i>
+                            </button>
+
+                            <button class="compare-info">
+                                <p>Gender: </p>
+                                <p>Male</p>
+                                <i class="fa-solid chart-textt fa-caret-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="range-container">
+                            <div class='card'>
+                                <div class='percent' style="--clr: #22D6AA; --num: 78">
+                                    <div class='dot'></div>
+                                    <svg>
+                                        <circle cx='70' cy='70' r='70'></circle>
+                                        <circle cx='70' cy='70' r='70'></circle>
+                                    </svg>
+                                    <div class='number'>
+                                        <h2>78 %</h2>
+                                    </div>
+                                </div>
+
+                                <h1>Average</h1>
+
+                            </div>
+
+                            <div class='card'>
+                                <div class='percent' style="--clr: #22D6AA; --num: 78">
+                                    <div class='dot'></div>
+                                    <svg>
+                                        <circle cx='70' cy='70' r='70'></circle>
+                                        <circle cx='70' cy='70' r='70'></circle>
+                                    </svg>
+                                    <div class='number'>
+                                        <h2>95 %</h2>
+                                    </div>
+                                </div>
+
+                                <h1>Top</h1>
+
+                            </div>
+
+                            <div class='card'>
+                                <div class='percent' style="--clr: #22D6AA; --num: 78">
+                                    <div class='dot'></div>
+                                    <svg>
+                                        <circle cx='70' cy='70' r='70'></circle>
+                                        <circle cx='70' cy='70' r='70'></circle>
+                                    </svg>
+                                    <div class='number'>
+                                        <h2>69 %</h2>
+                                    </div>
+                                </div>
+
+                                <h1>Me</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chart">
+
+            </div>
+        </section>
+
+        <!-- Retirement Strategy Section -->
+        <section class="strategy-container">
+            <h3 class="strategy-intro">Retirement Strategy</h3>
+
+            <div>
+                <div>
+                    <h4>Employee Contribution</h4>
+
+                    <div class="rate">
+                        <input type="range" name="employee-contribution" id=""> <span>12%</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Retirement Age</h4>
+                </div>
+
+                <div class="rate">
+                    <input type="range" name="employee-contribution" id=""> <span>65</span>
+                </div>
+
+                <div id="rate">
+                    <div class="rate">
+                        <h4>Employer Contribution</h4> <span>8.4%</span>
+                    </div>
+
+                    <div class="rate">
+                        <h4>Interest Rate</h4> <span>5%</span>
+                    </div>
+                </div>
+
+                <div class="rate-buttton">
+                    <button id="retirement-button">Update</i></button>
+                    <a href="" class="help-docs">View Help Docs <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+
+                <div id="more-container">
+                    <div>
+                        <h3 id="more-text">Are you considering a </h3>
+                        <span id="span">Housing Advance?</span>
+                    </div>
+                    <p id="text">Limited time reduced interest.</p>
+                    <a href="" class="help-docs">View Help Docs <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
